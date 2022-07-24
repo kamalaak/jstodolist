@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo filter app
+    </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" ></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body onload="demo();">
+   <div class="container bg-light">
+    <h1 class="text text-bg-primary"> Image Filter App  </h1>
+<span class=""> Choose Image </span> <input class=" bg-primary text-white" type="file" id = "upload-file" class="file-up">  </input>
+
+
+<canvas id="canvas" class="img-thumbnail "> </canvas>
+
+
+<div class="Filters text-center ">
+<h1> Filters </h1>
+<h3> Brightness </h3>
+<button  class="filter-btn increase_bright btn btn-primary"> Increase + </button>
+<button  class="filter-btn decrease_bright btn btn-primary"> Decrease - </button>
+<h3> Contrast </h3>
+<button  class="filter-btn increase_contrast btn btn-primary"> Increase + </button>
+<button  class="filter-btn decrease_contrast btn btn-primary"> Decrease - </button>
+<h3> Saturation </h3>
+<button  class="filter-btn increase_saturation btn btn-primary"> Increase + </button>
+<button  class="filter-btn decrease_saturation btn btn-primary"> Decrease - </button>
+
+</div>
+<div class="Effects text-center">
+<h1> Effects </h1>
+
+<button  class="filter-btn vintage btn btn-primary"> Vintage </button>
+<button  class="filter-btn lomo btn btn-primary"> Lomo </button>
+<button  class="filter-btn vintage btn btn-primary"> Clarity </button>
+<button class="filter-btn lomo btn btn-primary"> Sin City </button>
+
+</div>
+
+
+<br> <br><div class="text-center">
+<button id="download-btn" class="download-button btn btn-primary"> Download Photo</button>
+
+<button id="remove-btn" class="removeBtn btn btn-primary"> Remove Filters</button>
+
+</div>
+   </div>
+   <script src="main.js"></script>
+</body>
+</html>
